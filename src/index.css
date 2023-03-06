@@ -1,0 +1,137 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+.header {
+  width: 100%;
+}
+
+:root{
+  --barlow: 'Barlow', sans-serif;
+  --condensed: 'Barlow Condensed', sans-serif;
+  --bellefair:'Bellefair', serif;
+
+}
+
+.logo {
+  width: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+padding: 10px 20px;
+}
+li{
+  list-style: none;
+  color: white;
+  
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.navul{
+  
+}
+
+.navul{
+  display: none;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  width: 50%;
+  min-height: 100vh;
+  padding-top: 30px;
+  right: 0;
+  transition: ease-in-out 0.5s;
+  transform: translate(100%);
+}
+
+.add{
+  transform: translate(0%);
+}
+
+.sidelink{
+  margin-top: 60px;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.sidelink li{
+  margin-bottom: 30px;
+font-family: var(--condensed);
+font-weight: 400;
+font-size: 14px;
+letter-spacing: 3px;
+
+}
+
+.close{
+  position: absolute;
+  right: 10%;
+}
+
+.sidelink li span{
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+
+@media screen and (min-width:700px) {
+
+  .hamburger{
+    display: none;
+    
+
+  }
+
+  nav{
+  
+  }
+
+  .navul{
+    display: flex;
+    margin-right: 30px;
+  width: 80%;
+  max-width: 600px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+    gap: 7%;
+    font-size: 15px;
+background: rgba(255, 255, 255, 0.04);
+backdrop-filter: blur(40.7742px);
+  }
+
+  .navul li{
+
+    font-family: var(--condensed);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color:  #FFFFFF;
+    ;
+
+  }
+
+   .active{
+    padding-bottom: 15px;
+  }
+
+  
+
+}
+
+@media screen and (min-width:1024px) {
+  .navul{
+    margin-right: 10%;
+  }
+  
+}

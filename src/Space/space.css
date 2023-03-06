@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root{
+    --barlow: 'Barlow', sans-serif;
+    --condensed: 'Barlow Condensed', sans-serif;
+    --bellefair:'Bellefair', serif;
+
+}
+.spacemain{
+    background: url(/public/starter-code/assets/home/background-home-mobile.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    padding-bottom: 30px;
+    
+}
+.spacep{
+    font-size: 90px;
+    font-family: var(--bellefair);
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #ffff;
+}
+
+.spacediv{
+    text-align: center;
+}
+
+.travelspace{
+    font-family: var(--condensed);
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #D0D6F9;
+    ;
+    
+
+}
+.spaceword{
+    font-family: var(--barlow);
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 90%;
+    line-height: 27px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: #D0D6F9;
+    margin-bottom: 20px
+    ;
+}
+
+.divexplore{
+
+    
+    max-width: 150px;
+    height: 150px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+
+}
+
+
+.explore{
+    position: absolute;
+    color: black;
+    top: 50%;
+    font-family: var(--bellefair);
+    font-weight: 400;
+
+    
+}
+
+.spaceexplore{
+    padding-bottom: 20px;
+    
+}
+
+.divhover{
+    max-width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 100%;
+    position: relative;
+    padding-top: 50px;
+
+}
+
+.divhover:hover{
+ background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen  and (min-width:500px){
+
+    .travelspace{
+        margin-top: 40px;
+    }
+
+    .spaceword{
+        width: 70%;
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media screen and (min-width:700px) {
+
+    .spacemain{
+    background: url(/public/starter-code/assets/home/background-home-tablet.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 30px;
+    }
+
+    .spacep{
+        font-size: 120px;
+    }
+
+    .spaceword{
+        width: 58%;
+    }
+
+    
+    .divexplore{
+        max-width: 200px;
+        height: 200px;
+        background-color: white;
+        margin: 0 auto;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+    
+    }
+    .travelspace{
+        margin-top: 60px;
+    }
+
+    .divhover{
+        max-width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        border-radius: 100%;
+        position: relative;
+        padding-top: 50px;
+    
+    }
+    
+}
+
+
+@media screen and (min-width:1024px) {
+
+    .spacemain{
+        background: url(/public/starter-code/assets/home/background-home-desktop.jpg);
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        min-height: 100vh;
+        padding-bottom: 30px;
+        }
+
+    .mainspace{
+        display: flex;
+        flex-direction: row;
+        gap: 20%;
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    
+
+    .spacediv{
+
+        width: 50%;
+        text-align: initial;
+        padding-left: 60px;
+    }
+
+    .travelspace{
+        font-size: 35px;
+        
+    }
+
+    .spaceword{
+        width: 70%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .spaceexplore{
+        color: white;
+
+
+    }
+
+    .explore{
+        color: white;
+    }
+
+    
+    
+    .divexplore{
+        width: 300px;
+        height: 200px;
+        background-color: white;
+        margin: 0 auto;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+
+ 
+    
+    }
+    .explore{
+        position: absolute;
+        color: black;
+    }
+    .divhover{
+        width: 400px;
+        height: 300px;
+        margin: 0 auto;
+        border-radius: 100%;
+        position: relative;
+        padding-top: 50px;
+        
+    
+    }
+    
+}

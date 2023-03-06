@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    --barlow: 'Barlow', sans-serif;
+    --condensed: 'Barlow Condensed', sans-serif;
+    --bellefair:'Bellefair', serif;
+
+}
+
+.destinationmain{
+    background: url(/public/starter-code/assets/destination/background-destination-mobile.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh ;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.destination{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+.destination p{
+font-family: var(--condensed);
+color: white;
+font-size: 17px;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 4px;
+}
+
+.destination span{
+
+    font-weight: 700;
+    font-family: var(--condensed);
+    font-size: 17px;
+    opacity: 0.25;
+}
+.moon{
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    max-width: 200px;
+    
+}
+
+.moonp{
+    color: #D0D6F9;
+    font-family: var(--condensed);
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    cursor: pointer;
+  
+
+}
+
+.active{
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+
+.moonp:hover{
+    border-bottom: 3px solid rgba(100,100, 100, 0.3) ;
+}
+.names{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+.moonname{
+
+    font-family: var(--bellefair);
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+
+.description{
+    font-family: var(--barlow);
+    font-weight: 400;
+    color: #D0D6F9;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 25px;
+}
+
+.avgdistance{
+    text-align: center;
+    font-family: var(--condensed);
+    color: #D0D6F9;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    
+}
+
+.distance {
+
+    text-align: center;
+    font-family: var(--bellefair);
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+.esttravel{
+text-align: center;
+color: #D0D6F9;
+letter-spacing: 4px;
+text-transform: uppercase;
+margin-top: 8px;
+margin-bottom: 8px;
+
+}
+.travel{
+text-align: center;
+font-family: var(--bellefair);
+font-weight: 400;
+font-size: 40px;
+text-transform: uppercase;
+}
+
+@media screen and (min-width:700px) {
+    
+    .destination{
+        justify-content: flex-start;
+        padding-left: 8%;
+    }
+
+    .destinationcover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        gap: 7%;
+        border-top: 0.5px solid rgba(100,100, 100, 0.5) ;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+
+    }
+    .avgdistance{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .esttravel{
+        margin-top: 0;
+        margin-bottom: 20px;
+
+    }
+
+    .distance{
+        margin-bottom: 0;
+    }
+
+    .description{
+        width: 75%;
+    }
+
+
+   .moonname{
+    font-size: 60px;
+    margin-bottom: 20px;
+   }
+
+   .moon{
+    max-width: 250px;
+    margin-bottom: 50px;
+   }
+
+   
+}
+
+@media screen and (min-width:1024px) {
+
+    .maindestination{
+        display: flex;
+    }
+
+    .firstdestination{
+        width: 100%;
+    }
+
+    .seconddestination{
+    margin-top: 70px;
+    margin-left: 20px;
+    text-align: start;
+    width: 100%;
+    padding-left: 30px;
+    }
+    .moon{
+        width: 100%;
+        max-width: 350px;
+        margin-top: 50px;
+    }
+
+    .names{
+        text-align: start;
+        width: fit-content;
+    }
+    .moonp{
+        text-align: start;
+    }
+    .moonname{
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: start;
+        width: fit-content;
+    }
+    .description{
+        text-align: start;
+
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .destinationcover{
+        text-align: start;
+        margin: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+        line-height: 25px;
+    }
+
+    .distance{
+        margin: 0;
+        padding: 0;
+        text-align: start;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    
+
+    .totaldistance{
+        margin: 0;
+    }
+
+    .esttravel{
+        margin: 0;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+
+    .avgdistance{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .travel{
+        margin: 0;
+        font-size: 30px;
+    }
+}

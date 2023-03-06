@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+:root{
+    --barlow: 'Barlow', sans-serif;
+    --condensed: 'Barlow Condensed', sans-serif;
+    --bellefair:'Bellefair', serif;
+
+}
+
+.crewmain{
+    background: url(/public/starter-code/assets/crew/background-crew-mobile.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+    color: white;
+    padding-bottom: 60px;
+    
+}
+
+.crew{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    max-width: 200px;
+}
+
+.crewdiv{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.crewdestination{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+
+.crewdestination p{
+    font-family: var(--condensed);
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    }
+    
+    .crewdestination span{
+    
+        font-weight: 700;
+        font-family: var(--condensed);
+        font-size: 17px;
+        opacity: 0.25;
+    }
+
+
+.crewdivdiv {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 100%;
+    margin-top: 30px;
+    opacity: 0.17;
+}
+.crewdivdiv:hover{
+    opacity: 0.5;
+}
+
+.activecrew{
+    opacity: 1;
+}
+
+.role{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--bellefair);
+    font-weight: 400;
+    opacity: 0.5;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.crewname{
+
+text-transform: uppercase;
+font-family: var(--bellefair);
+font-weight: 400;
+text-align: center;
+margin-top: 20px;
+
+}
+
+.bio{
+    font-family: var(--barlow);
+    font-weight: 400;
+    color:  #D0D6F9;
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 15px;
+    line-height: 25px;
+    
+}
+
+@media screen and (min-width:700px) {
+    .main{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .firstcrew{
+    order: 2;
+    }
+    
+
+    .secondcrew{
+        order: 1;
+ 
+    }
+
+    .crewdestination{
+        justify-content: flex-start;
+        padding-left: 8%;
+        margin-bottom: 30px;
+        
+    }
+
+    .crewdestination p{
+        font-size: 20px;
+    }
+    .crewdestination span{
+        font-size: 20px;
+    }
+
+    .secondcrew{
+        display: flex;
+        flex-direction: column;
+    }
+    .crewdiv{
+        order: 2;
+    }
+
+    .crewword{
+        order: 1;
+    }
+
+    .crewname{
+        font-size: 40px;
+    }
+
+    .bio{
+        width: 60%;
+    }
+
+    .crew{
+        max-width: 250px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    .main{
+
+        flex-direction: row;
+    }
+    
+
+
+    .firstcrew{
+        width: 100%;
+    }
+
+    .secondcrew{
+        margin-top: 60px;
+        padding-left: 80px;
+    }
+
+    .crewname{
+        text-align: start;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .role{
+        text-align: start;
+    }
+
+    .bio{
+        text-align: start;
+        margin: 0;
+        width: 70%;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    .crewdiv{
+    justify-content: flex-start;
+    margin: 0;
+    }
+
+    .crew{
+        width: 100%;
+        max-width: 350px;
+        margin-right: 120px;
+        margin-top: 5px;
+    }
+
+
+
+    
+}

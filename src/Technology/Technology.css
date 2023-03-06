@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+:root{
+    --barlow: 'Barlow', sans-serif;
+    --condensed: 'Barlow Condensed', sans-serif;
+    --bellefair:'Bellefair', serif;
+
+}
+.technologymain{
+    background: url(/public/starter-code/assets/technology/background-technology-mobile.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.launch{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.divcircle{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+    margin-top: 30px;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(100%, 100%, 100%, 0.4);
+    color: white;
+    font-family: var(--bellefair);
+    font-weight: 400;
+}
+
+.circle:hover{
+    border: 1px solid white;
+    
+}
+
+
+.activetech{
+    background-color: white;
+color: black;
+}
+.technologyword{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.terminology{
+    color: #D0D6F9;
+    font-family: var(--condensed);
+    font-size: 16px;
+    letter-spacing: 2px;
+    
+
+}
+
+.vehicle{
+    font-family: var(--bellefair);
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+   
+}
+.launchword{
+font: var(--barlow);
+    font-weight: 400;
+    color: #D0D6F9;
+    line-height: 25px;
+    width: 86%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    
+
+}
+
+@media screen and (min-width:700px) {
+    .launchword{
+        width: 60%;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .vehicle{
+        font-size: 40px;
+    }
+
+    .terminology{
+        font-size: 20px;
+    }
+    .launch{
+        width: 100%;
+    }
+    
+}
+
+
+@media screen  and (min-width:1024px){
+
+    .maintechnology{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+
+    .firsttechnology{
+        order: 2;
+        
+        width: 100%;
+    }
+
+    .secondtechnology{
+        width: 100%;
+        order: 1;
+    }
+    .launch{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .secondtechnology{
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+        gap: 30px;
+    }
+    .divcircle{
+        flex-direction: column;
+        margin: 0;
+        cursor: pointer;
+
+        
+    }
+
+    .technologyword{
+        text-align: start;
+    }
+    .launchword{
+        width: 90%;
+        text-align: start;
+        margin: 0;
+    }
+}
